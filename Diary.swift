@@ -19,6 +19,12 @@ class Diary: Object {
     //本文
     dynamic var body = "本文"
     
+    //本のタイトル
+    dynamic var bookTitle = ""
+    
+    //本の写真
+    dynamic var photo: UIImage? = nil
+    
     //最終更新日時
     dynamic var date = NSDate()
     

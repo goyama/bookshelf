@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0C9608B45D402ADE3D66E647 /* Pods_diaryTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABFBCEFC6D05C2B77C8E17B0 /* Pods_diaryTests.framework */; };
+		C681E9611D1CFA270006ABCD /* BookShelfViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C681E9601D1CFA270006ABCD /* BookShelfViewController.swift */; };
+		C681E9631D1D040C0006ABCD /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C681E9621D1D040C0006ABCD /* RegistrationViewController.swift */; };
 		C6CB6B961D1C2107006B8910 /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CB6B951D1C2107006B8910 /* InputViewController.swift */; };
 		C6CB6B9A1D1C36F6006B8910 /* Diary.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CB6B991D1C36F6006B8910 /* Diary.swift */; };
 		C6EF3CA71D1ADB8200A3936A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EF3CA61D1ADB8200A3936A /* AppDelegate.swift */; };
@@ -44,6 +46,8 @@
 		5C6DBAAA670FDB537DD8558D /* Pods-diary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-diary.debug.xcconfig"; path = "Pods/Target Support Files/Pods-diary/Pods-diary.debug.xcconfig"; sourceTree = "<group>"; };
 		884B69645A9D3EFB528D074C /* Pods-diaryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-diaryTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-diaryTests/Pods-diaryTests.release.xcconfig"; sourceTree = "<group>"; };
 		ABFBCEFC6D05C2B77C8E17B0 /* Pods_diaryTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_diaryTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C681E9601D1CFA270006ABCD /* BookShelfViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookShelfViewController.swift; sourceTree = "<group>"; };
+		C681E9621D1D040C0006ABCD /* RegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		C6CB6B951D1C2107006B8910 /* InputViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
 		C6CB6B991D1C36F6006B8910 /* Diary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Diary.swift; path = ../Diary.swift; sourceTree = "<group>"; };
 		C6EF3CA31D1ADB8200A3936A /* diary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = diary.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -139,13 +143,15 @@
 		C6EF3CA51D1ADB8200A3936A /* diary */ = {
 			isa = PBXGroup;
 			children = (
-				C6CB6B991D1C36F6006B8910 /* Diary.swift */,
-				C6EF3CA61D1ADB8200A3936A /* AppDelegate.swift */,
 				C6EF3CA81D1ADB8200A3936A /* ViewController.swift */,
+				C681E9601D1CFA270006ABCD /* BookShelfViewController.swift */,
+				C6CB6B951D1C2107006B8910 /* InputViewController.swift */,
+				C681E9621D1D040C0006ABCD /* RegistrationViewController.swift */,
+				C6CB6B991D1C36F6006B8910 /* Diary.swift */,
 				C6EF3CAA1D1ADB8200A3936A /* Main.storyboard */,
+				C6EF3CA61D1ADB8200A3936A /* AppDelegate.swift */,
 				C6EF3CAD1D1ADB8200A3936A /* Assets.xcassets */,
 				C6EF3CB21D1ADB8200A3936A /* Info.plist */,
-				C6CB6B951D1C2107006B8910 /* InputViewController.swift */,
 			);
 			path = diary;
 			sourceTree = "<group>";
@@ -429,9 +435,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C681E9631D1D040C0006ABCD /* RegistrationViewController.swift in Sources */,
 				C6CB6B961D1C2107006B8910 /* InputViewController.swift in Sources */,
 				C6EF3CA91D1ADB8200A3936A /* ViewController.swift in Sources */,
 				C6EF3CA71D1ADB8200A3936A /* AppDelegate.swift in Sources */,
+				C681E9611D1CFA270006ABCD /* BookShelfViewController.swift in Sources */,
 				C6CB6B9A1D1C36F6006B8910 /* Diary.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

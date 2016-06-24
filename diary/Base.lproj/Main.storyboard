@@ -68,14 +68,16 @@
                                     <action selector="save:" destination="mj2-o6-Mlk" eventType="touchUpInside" id="kgi-CH-xxw"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rqb-oA-OnQ">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="タイトル" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rqb-oA-OnQ">
                                 <rect key="frame" x="59" y="175" width="257" height="30"/>
+                                <color key="textColor" red="0.7972311943" green="0.82487445319999997" blue="0.87816999350000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="本文" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="aKE-rg-pwO">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="一言・メモ" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="aKE-rg-pwO">
                                 <rect key="frame" x="59" y="250" width="257" height="211"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="0.7972311943" green="0.82487445319999997" blue="0.87816999350000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -97,6 +99,118 @@
             </objects>
             <point key="canvasLocation" x="1515.5" y="356.5"/>
         </scene>
+        <!--Book Shelf View Controller-->
+        <scene sceneID="h0D-p8-4Dx">
+            <objects>
+                <viewController id="ZF5-84-U9P" customClass="BookShelfViewController" customModule="diary" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Hiu-Xj-7rZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="Iqe-Zb-ML5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JiC-EP-69c">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="MJH-km-afN">
+                                <rect key="frame" x="0.0" y="63" width="375" height="604"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Pfd-NM-aOi">
+                                    <size key="itemSize" width="172" height="204"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="bookcell" id="3PC-uC-eTA">
+                                        <rect key="frame" x="0.0" y="64" width="172" height="204"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="172" height="204"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="ZF5-84-U9P" id="5qg-cs-sSy"/>
+                                    <outlet property="delegate" destination="ZF5-84-U9P" id="POJ-vQ-9vX"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="MJH-km-afN" secondAttribute="trailing" id="BMk-3c-KMo"/>
+                            <constraint firstItem="MJH-km-afN" firstAttribute="leading" secondItem="JiC-EP-69c" secondAttribute="leadingMargin" id="etj-xW-Eeb"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="jhY-tO-Ad1">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="xEk-oV-Dkq"/>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="collectionView" destination="MJH-km-afN" id="sfW-uB-3Vk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NVQ-sS-QNZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1913.5" y="356.5"/>
+        </scene>
+        <!--Registration View Controller-->
+        <scene sceneID="qEQ-s7-JKh">
+            <objects>
+                <viewController id="Qho-vz-KLE" customClass="RegistrationViewController" customModule="diary" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4zI-hB-x0P"/>
+                        <viewControllerLayoutGuide type="bottom" id="s7l-SW-zgJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="S6W-o7-cpn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="本のタイトル" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3CQ-6J-5Iv">
+                                <rect key="frame" x="45" y="116" width="285" height="30"/>
+                                <color key="textColor" red="0.7972311943" green="0.82487445319999997" blue="0.87816999350000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W3z-gK-pRv">
+                                <rect key="frame" x="45" y="161" width="222" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sz8-pa-cfN">
+                                <rect key="frame" x="16" y="164" width="105" height="30"/>
+                                <state key="normal" title="本の画像を取得"/>
+                                <connections>
+                                    <action selector="photo:" destination="Qho-vz-KLE" eventType="touchUpInside" id="SfA-dc-lOn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GC2-lx-RzO">
+                                <rect key="frame" x="172" y="470" width="30" height="30"/>
+                                <state key="normal" title="保存"/>
+                                <connections>
+                                    <action selector="save:" destination="Qho-vz-KLE" eventType="touchUpInside" id="M7G-Kl-sSP"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IrS-4b-GHL">
+                                <rect key="frame" x="45" y="202" width="285" height="200"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3CQ-6J-5Iv" firstAttribute="centerX" secondItem="S6W-o7-cpn" secondAttribute="centerX" id="aOf-9k-qwa"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="bookTitleTextField" destination="3CQ-6J-5Iv" id="bD2-ny-Eng"/>
+                        <outlet property="photoImageView" destination="IrS-4b-GHL" id="YCl-pK-uWH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xau-R8-vVA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2303.5" y="356.5"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="FY8-mU-xQC">
             <objects>
@@ -115,8 +229,26 @@
             </objects>
             <point key="canvasLocation" x="315" y="1050"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="JKq-YG-EHS">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5Id-mS-gEV" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Qa2-dr-C5L">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ZF5-84-U9P" kind="relationship" relationship="rootViewController" id="cb8-TM-JEb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ATr-jq-w9s" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2026" y="1036"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="ZVZ-09-9Uy"/>
+        <segue reference="BOY-9O-pv2"/>
     </inferredMetricsTieBreakers>
 </document>
