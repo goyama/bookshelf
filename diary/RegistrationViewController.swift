@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 class RegistrationViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     @IBOutlet weak var photoImageView: UIImageView!
@@ -58,7 +59,7 @@ class RegistrationViewController: UIViewController, UINavigationControllerDelega
     @IBAction func save(sender: UIButton) {
         try! realm.write {
             self.diary.bookTitle = self.bookTitleTextField.text!
-            self.diary.photo = self.photoImageView.photo
+            self.diary.photo = self.photoImageView.image!
             self.diary.date = NSDate()
             self.realm.add(self.diary, update: true)
 

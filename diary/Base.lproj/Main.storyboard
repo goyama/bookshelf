@@ -77,6 +77,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="一言・メモ" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="aKE-rg-pwO">
                                 <rect key="frame" x="59" y="250" width="257" height="211"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="textColor" red="0.7972311943" green="0.82487445319999997" blue="0.87816999350000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -249,6 +250,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="BOY-9O-pv2"/>
+        <segue reference="ZVZ-09-9Uy"/>
     </inferredMetricsTieBreakers>
 </document>

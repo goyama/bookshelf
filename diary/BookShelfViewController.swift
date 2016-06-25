@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 class BookShelfViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     let realm = try! Realm()
@@ -16,15 +17,18 @@ class BookShelfViewController: UIViewController, UICollectionViewDataSource, UIC
 
     @IBOutlet weak var collectionView: UICollectionView!
     
-  
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
         return 1
     }
-    
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 20
     }
-   
+    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+        let cell collectionView.dequeueReusableCellWithReuseIdentifier(r, forIndexPath: <#T##NSIndexPath#>)
+    }
+  
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

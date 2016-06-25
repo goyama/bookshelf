@@ -8,10 +8,31 @@
 
 /* Begin PBXBuildFile section */
 		0C9608B45D402ADE3D66E647 /* Pods_diaryTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABFBCEFC6D05C2B77C8E17B0 /* Pods_diaryTests.framework */; };
+		C66A81D61D1D827500F0BE98 /* Diary.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66A81D51D1D827500F0BE98 /* Diary.swift */; };
 		C681E9611D1CFA270006ABCD /* BookShelfViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C681E9601D1CFA270006ABCD /* BookShelfViewController.swift */; };
 		C681E9631D1D040C0006ABCD /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C681E9621D1D040C0006ABCD /* RegistrationViewController.swift */; };
+		C6C310921D1E5061008C6F74 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = C6C3107C1D1E5061008C6F74 /* Contents.json */; };
+		C6C310931D1E5061008C6F74 /* Icon-40.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C3107D1D1E5061008C6F74 /* Icon-40.png */; };
+		C6C310941D1E5061008C6F74 /* Icon-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C3107E1D1E5061008C6F74 /* Icon-40@2x.png */; };
+		C6C310951D1E5061008C6F74 /* Icon-40@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C3107F1D1E5061008C6F74 /* Icon-40@3x.png */; };
+		C6C310961D1E5061008C6F74 /* Icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C310801D1E5061008C6F74 /* Icon-60@2x.png */; };
+		C6C310971D1E5061008C6F74 /* Icon-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C310811D1E5061008C6F74 /* Icon-60@3x.png */; };
+		C6C310981D1E5061008C6F74 /* Icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C310821D1E5061008C6F74 /* Icon-76.png */; };
+		C6C310991D1E5061008C6F74 /* Icon-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C310831D1E5061008C6F74 /* Icon-76@2x.png */; };
+		C6C3109A1D1E5061008C6F74 /* Icon-83.5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C310841D1E5061008C6F74 /* Icon-83.5@2x.png */; };
+		C6C3109B1D1E5061008C6F74 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C310851D1E5061008C6F74 /* Icon-Small.png */; };
+		C6C3109C1D1E5061008C6F74 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C310861D1E5061008C6F74 /* Icon-Small@2x.png */; };
+		C6C3109D1D1E5061008C6F74 /* Icon-Small@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C310871D1E5061008C6F74 /* Icon-Small@3x.png */; };
+		C6C3109E1D1E5061008C6F74 /* Icon-60.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C310881D1E5061008C6F74 /* Icon-60.png */; };
+		C6C3109F1D1E5061008C6F74 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C310891D1E5061008C6F74 /* Icon-72.png */; };
+		C6C310A01D1E5061008C6F74 /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C3108A1D1E5061008C6F74 /* Icon-72@2x.png */; };
+		C6C310A11D1E5061008C6F74 /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C3108B1D1E5061008C6F74 /* Icon-Small-50.png */; };
+		C6C310A21D1E5061008C6F74 /* Icon-Small-50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C3108C1D1E5061008C6F74 /* Icon-Small-50@2x.png */; };
+		C6C310A31D1E5061008C6F74 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C3108D1D1E5061008C6F74 /* Icon.png */; };
+		C6C310A41D1E5061008C6F74 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C3108E1D1E5061008C6F74 /* Icon@2x.png */; };
+		C6C310A51D1E5061008C6F74 /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C3108F1D1E5061008C6F74 /* iTunesArtwork.png */; };
+		C6C310A61D1E5061008C6F74 /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C310901D1E5061008C6F74 /* iTunesArtwork@2x.png */; };
 		C6CB6B961D1C2107006B8910 /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CB6B951D1C2107006B8910 /* InputViewController.swift */; };
-		C6CB6B9A1D1C36F6006B8910 /* Diary.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CB6B991D1C36F6006B8910 /* Diary.swift */; };
 		C6EF3CA71D1ADB8200A3936A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EF3CA61D1ADB8200A3936A /* AppDelegate.swift */; };
 		C6EF3CA91D1ADB8200A3936A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EF3CA81D1ADB8200A3936A /* ViewController.swift */; };
 		C6EF3CAC1D1ADB8200A3936A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6EF3CAA1D1ADB8200A3936A /* Main.storyboard */; };
@@ -46,10 +67,31 @@
 		5C6DBAAA670FDB537DD8558D /* Pods-diary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-diary.debug.xcconfig"; path = "Pods/Target Support Files/Pods-diary/Pods-diary.debug.xcconfig"; sourceTree = "<group>"; };
 		884B69645A9D3EFB528D074C /* Pods-diaryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-diaryTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-diaryTests/Pods-diaryTests.release.xcconfig"; sourceTree = "<group>"; };
 		ABFBCEFC6D05C2B77C8E17B0 /* Pods_diaryTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_diaryTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C66A81D51D1D827500F0BE98 /* Diary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Diary.swift; sourceTree = "<group>"; };
 		C681E9601D1CFA270006ABCD /* BookShelfViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookShelfViewController.swift; sourceTree = "<group>"; };
 		C681E9621D1D040C0006ABCD /* RegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		C6C3107C1D1E5061008C6F74 /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+		C6C3107D1D1E5061008C6F74 /* Icon-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40.png"; sourceTree = "<group>"; };
+		C6C3107E1D1E5061008C6F74 /* Icon-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40@2x.png"; sourceTree = "<group>"; };
+		C6C3107F1D1E5061008C6F74 /* Icon-40@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40@3x.png"; sourceTree = "<group>"; };
+		C6C310801D1E5061008C6F74 /* Icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@2x.png"; sourceTree = "<group>"; };
+		C6C310811D1E5061008C6F74 /* Icon-60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@3x.png"; sourceTree = "<group>"; };
+		C6C310821D1E5061008C6F74 /* Icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76.png"; sourceTree = "<group>"; };
+		C6C310831D1E5061008C6F74 /* Icon-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76@2x.png"; sourceTree = "<group>"; };
+		C6C310841D1E5061008C6F74 /* Icon-83.5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-83.5@2x.png"; sourceTree = "<group>"; };
+		C6C310851D1E5061008C6F74 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
+		C6C310861D1E5061008C6F74 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
+		C6C310871D1E5061008C6F74 /* Icon-Small@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@3x.png"; sourceTree = "<group>"; };
+		C6C310881D1E5061008C6F74 /* Icon-60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60.png"; sourceTree = "<group>"; };
+		C6C310891D1E5061008C6F74 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		C6C3108A1D1E5061008C6F74 /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72@2x.png"; sourceTree = "<group>"; };
+		C6C3108B1D1E5061008C6F74 /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50.png"; sourceTree = "<group>"; };
+		C6C3108C1D1E5061008C6F74 /* Icon-Small-50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50@2x.png"; sourceTree = "<group>"; };
+		C6C3108D1D1E5061008C6F74 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		C6C3108E1D1E5061008C6F74 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		C6C3108F1D1E5061008C6F74 /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTunesArtwork.png; sourceTree = "<group>"; };
+		C6C310901D1E5061008C6F74 /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@2x.png"; sourceTree = "<group>"; };
 		C6CB6B951D1C2107006B8910 /* InputViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
-		C6CB6B991D1C36F6006B8910 /* Diary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Diary.swift; path = ../Diary.swift; sourceTree = "<group>"; };
 		C6EF3CA31D1ADB8200A3936A /* diary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = diary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6EF3CA61D1ADB8200A3936A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6EF3CA81D1ADB8200A3936A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -118,9 +160,46 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C6C3107A1D1E5061008C6F74 /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				C6C3107B1D1E5061008C6F74 /* AppIcon.appiconset */,
+				C6C310881D1E5061008C6F74 /* Icon-60.png */,
+				C6C310891D1E5061008C6F74 /* Icon-72.png */,
+				C6C3108A1D1E5061008C6F74 /* Icon-72@2x.png */,
+				C6C3108B1D1E5061008C6F74 /* Icon-Small-50.png */,
+				C6C3108C1D1E5061008C6F74 /* Icon-Small-50@2x.png */,
+				C6C3108D1D1E5061008C6F74 /* Icon.png */,
+				C6C3108E1D1E5061008C6F74 /* Icon@2x.png */,
+				C6C3108F1D1E5061008C6F74 /* iTunesArtwork.png */,
+				C6C310901D1E5061008C6F74 /* iTunesArtwork@2x.png */,
+			);
+			path = ios;
+			sourceTree = "<group>";
+		};
+		C6C3107B1D1E5061008C6F74 /* AppIcon.appiconset */ = {
+			isa = PBXGroup;
+			children = (
+				C6C3107C1D1E5061008C6F74 /* Contents.json */,
+				C6C3107D1D1E5061008C6F74 /* Icon-40.png */,
+				C6C3107E1D1E5061008C6F74 /* Icon-40@2x.png */,
+				C6C3107F1D1E5061008C6F74 /* Icon-40@3x.png */,
+				C6C310801D1E5061008C6F74 /* Icon-60@2x.png */,
+				C6C310811D1E5061008C6F74 /* Icon-60@3x.png */,
+				C6C310821D1E5061008C6F74 /* Icon-76.png */,
+				C6C310831D1E5061008C6F74 /* Icon-76@2x.png */,
+				C6C310841D1E5061008C6F74 /* Icon-83.5@2x.png */,
+				C6C310851D1E5061008C6F74 /* Icon-Small.png */,
+				C6C310861D1E5061008C6F74 /* Icon-Small@2x.png */,
+				C6C310871D1E5061008C6F74 /* Icon-Small@3x.png */,
+			);
+			path = AppIcon.appiconset;
+			sourceTree = "<group>";
+		};
 		C6EF3C9A1D1ADB8200A3936A = {
 			isa = PBXGroup;
 			children = (
+				C66A81D51D1D827500F0BE98 /* Diary.swift */,
 				C6EF3CA51D1ADB8200A3936A /* diary */,
 				C6EF3CBA1D1ADB8200A3936A /* diaryTests */,
 				C6EF3CC51D1ADB8200A3936A /* diaryUITests */,
@@ -143,11 +222,11 @@
 		C6EF3CA51D1ADB8200A3936A /* diary */ = {
 			isa = PBXGroup;
 			children = (
+				C6C3107A1D1E5061008C6F74 /* ios */,
 				C6EF3CA81D1ADB8200A3936A /* ViewController.swift */,
 				C681E9601D1CFA270006ABCD /* BookShelfViewController.swift */,
 				C6CB6B951D1C2107006B8910 /* InputViewController.swift */,
 				C681E9621D1D040C0006ABCD /* RegistrationViewController.swift */,
-				C6CB6B991D1C36F6006B8910 /* Diary.swift */,
 				C6EF3CAA1D1ADB8200A3936A /* Main.storyboard */,
 				C6EF3CA61D1ADB8200A3936A /* AppDelegate.swift */,
 				C6EF3CAD1D1ADB8200A3936A /* Assets.xcassets */,
@@ -286,8 +365,29 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6C3109A1D1E5061008C6F74 /* Icon-83.5@2x.png in Resources */,
+				C6C310971D1E5061008C6F74 /* Icon-60@3x.png in Resources */,
+				C6C310931D1E5061008C6F74 /* Icon-40.png in Resources */,
+				C6C310A11D1E5061008C6F74 /* Icon-Small-50.png in Resources */,
 				C6EF3CAE1D1ADB8200A3936A /* Assets.xcassets in Resources */,
 				C6EF3CAC1D1ADB8200A3936A /* Main.storyboard in Resources */,
+				C6C310A51D1E5061008C6F74 /* iTunesArtwork.png in Resources */,
+				C6C310A01D1E5061008C6F74 /* Icon-72@2x.png in Resources */,
+				C6C3109E1D1E5061008C6F74 /* Icon-60.png in Resources */,
+				C6C310A21D1E5061008C6F74 /* Icon-Small-50@2x.png in Resources */,
+				C6C3109C1D1E5061008C6F74 /* Icon-Small@2x.png in Resources */,
+				C6C310961D1E5061008C6F74 /* Icon-60@2x.png in Resources */,
+				C6C310921D1E5061008C6F74 /* Contents.json in Resources */,
+				C6C310A31D1E5061008C6F74 /* Icon.png in Resources */,
+				C6C310951D1E5061008C6F74 /* Icon-40@3x.png in Resources */,
+				C6C3109B1D1E5061008C6F74 /* Icon-Small.png in Resources */,
+				C6C310941D1E5061008C6F74 /* Icon-40@2x.png in Resources */,
+				C6C310A41D1E5061008C6F74 /* Icon@2x.png in Resources */,
+				C6C310991D1E5061008C6F74 /* Icon-76@2x.png in Resources */,
+				C6C3109F1D1E5061008C6F74 /* Icon-72.png in Resources */,
+				C6C3109D1D1E5061008C6F74 /* Icon-Small@3x.png in Resources */,
+				C6C310981D1E5061008C6F74 /* Icon-76.png in Resources */,
+				C6C310A61D1E5061008C6F74 /* iTunesArtwork@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,7 +540,7 @@
 				C6EF3CA91D1ADB8200A3936A /* ViewController.swift in Sources */,
 				C6EF3CA71D1ADB8200A3936A /* AppDelegate.swift in Sources */,
 				C681E9611D1CFA270006ABCD /* BookShelfViewController.swift in Sources */,
-				C6CB6B9A1D1C36F6006B8910 /* Diary.swift in Sources */,
+				C66A81D61D1D827500F0BE98 /* Diary.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

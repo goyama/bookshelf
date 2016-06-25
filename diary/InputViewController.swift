@@ -7,13 +7,14 @@
 //
 
 import UIKit
+import RealmSwift
 
 class InputViewController: UIViewController {
-    @IBOutlet weak var titleTextField: UITextField!
-    @IBOutlet weak var body: UITextView!
+    @IBOutlet weak var titleTextField: UITextField? = nil
+    @IBOutlet weak var bodyTextView: UITextView? = nil
     
     let realm = try! Realm()
-    var diary: Diary
+    var diary: Diary?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +25,9 @@ class InputViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+   
+    
+    
     }
     
 
@@ -39,10 +43,10 @@ class InputViewController: UIViewController {
 
        @IBAction func save(sender: UIButton) {
         try! realm.write {
-            self.diary.title = self.titleTextField.text!
-            self.diary.body = self.bodyTextView.text
-            self.diary.date = NSDate()
-            self.realm.add(self.diary, update: true)
+            self.diary!.title = (self.titleTextField?.text!)!
+            self.diary!.body = self.bodyTextView!.text
+            self.diary!.date = NSDate()
+            self.realm.add(self.diary!, update: true)
         }
         self.navigationController?.popViewControllerAnimated(true)
     }

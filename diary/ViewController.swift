@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSource {
     var dataArray:[Int] = []
@@ -21,7 +22,7 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
         
         if segue.identifier == "cellSegue" {
             let indexPath = self.tableView.indexPathForSelectedRow
-            inputViewController.diary = dataArray[indexPath!.row]
+            //inputViewController.diary = dataArray[indexPath!.row]
             
             
         } else {
@@ -29,7 +30,7 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
             diary.title = "タイトル"
             diary.body = "本文"
             if dataArray.count != 0 {
-                diary.id = dataArray.max("id")! + 1
+                //diary.id = dataArray.max("id")! + 1
             }
             inputViewController.diary = diary
         }
@@ -50,9 +51,9 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell: UITableViewCell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "Cell")
         
-        let object = dataArray[indexPath.row]
-        cell.textLabel?.text = object.title
-        cell.detailTextLabel?.text = object.date.description
+        //let object = dataArray[indexPath.row]
+        //cell.textLabel?.text
+        //cell.detailTextLabel?.text =
         return cell
     }
     func tableView(tableView: UITableView, editingStyleForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCellEditingStyle{
@@ -62,7 +63,7 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
      func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if editingStyle == UITableViewCellEditingStyle.Delete {
             try! realm.write {
-                self.realm.delete(self.dataArray[indexPath.row])
+                //self.realm.delete(self.dataArray[indexPath.row])
                 tableView.deleteRowsAtIndexPaths([indexPath],withRowAnimation: UITableViewRowAnimation.Fade)
             }
         }
