@@ -13,6 +13,7 @@ class BookShelfViewController: UIViewController, UICollectionViewDataSource, UIC
     let realm = try! Realm()
     let dtaArray = try!
         Realm().objects(Diary).sorted("date", ascending: false)
+    let reuseIdentifier="bookcell"
 
 
     @IBOutlet weak var collectionView: UICollectionView!
@@ -24,7 +25,8 @@ class BookShelfViewController: UIViewController, UICollectionViewDataSource, UIC
         return 20
     }
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell collectionView.dequeueReusableCellWithReuseIdentifier(r, forIndexPath: <#T##NSIndexPath#>)
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath)
+        return cell
     }
   
     
