@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0C9608B45D402ADE3D66E647 /* Pods_diaryTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABFBCEFC6D05C2B77C8E17B0 /* Pods_diaryTests.framework */; };
 		C66A81D61D1D827500F0BE98 /* Diary.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66A81D51D1D827500F0BE98 /* Diary.swift */; };
+		C66D403A1D23EB8400220C1A /* TitleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66D40391D23EB8400220C1A /* TitleViewController.swift */; };
 		C681E9611D1CFA270006ABCD /* BookShelfViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C681E9601D1CFA270006ABCD /* BookShelfViewController.swift */; };
 		C681E9631D1D040C0006ABCD /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C681E9621D1D040C0006ABCD /* RegistrationViewController.swift */; };
 		C6C310921D1E5061008C6F74 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = C6C3107C1D1E5061008C6F74 /* Contents.json */; };
@@ -68,6 +69,7 @@
 		884B69645A9D3EFB528D074C /* Pods-diaryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-diaryTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-diaryTests/Pods-diaryTests.release.xcconfig"; sourceTree = "<group>"; };
 		ABFBCEFC6D05C2B77C8E17B0 /* Pods_diaryTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_diaryTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C66A81D51D1D827500F0BE98 /* Diary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Diary.swift; sourceTree = "<group>"; };
+		C66D40391D23EB8400220C1A /* TitleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleViewController.swift; sourceTree = "<group>"; };
 		C681E9601D1CFA270006ABCD /* BookShelfViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookShelfViewController.swift; sourceTree = "<group>"; };
 		C681E9621D1D040C0006ABCD /* RegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		C6C3107C1D1E5061008C6F74 /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
@@ -224,6 +226,7 @@
 			children = (
 				C6C3107A1D1E5061008C6F74 /* ios */,
 				C6EF3CA81D1ADB8200A3936A /* ViewController.swift */,
+				C66D40391D23EB8400220C1A /* TitleViewController.swift */,
 				C681E9601D1CFA270006ABCD /* BookShelfViewController.swift */,
 				C6CB6B951D1C2107006B8910 /* InputViewController.swift */,
 				C681E9621D1D040C0006ABCD /* RegistrationViewController.swift */,
@@ -538,6 +541,7 @@
 				C681E9631D1D040C0006ABCD /* RegistrationViewController.swift in Sources */,
 				C6CB6B961D1C2107006B8910 /* InputViewController.swift in Sources */,
 				C6EF3CA91D1ADB8200A3936A /* ViewController.swift in Sources */,
+				C66D403A1D23EB8400220C1A /* TitleViewController.swift in Sources */,
 				C6EF3CA71D1ADB8200A3936A /* AppDelegate.swift in Sources */,
 				C681E9611D1CFA270006ABCD /* BookShelfViewController.swift in Sources */,
 				C66A81D61D1D827500F0BE98 /* Diary.swift in Sources */,
