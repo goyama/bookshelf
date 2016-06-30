@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="gqt-fg-O60">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="sdd-TO-bsy">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Title View Controller-->
         <scene sceneID="vHa-lc-KbA">
             <objects>
-                <viewController id="sdd-TO-bsy" customClass="TitleViewController" customModule="diary" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="sdd-TO-bsy" customClass="TitleViewController" customModule="diary" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7pN-3F-v71"/>
                         <viewControllerLayoutGuide type="bottom" id="mfG-6x-WC0"/>
@@ -18,36 +17,52 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FpH-gi-Iqa">
-                                <rect key="frame" x="102" y="409" width="171" height="64"/>
-                                <state key="normal" title="記録する"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FpH-gi-Iqa">
+                                <rect key="frame" x="155" y="318" width="64" height="32"/>
+                                <color key="backgroundColor" red="0.8671875" green="0.8671875" blue="0.8671875" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <state key="normal" title="記録する">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.7972311943" green="0.82487445319999997" blue="0.87816999350000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="InputButton:" destination="sdd-TO-bsy" eventType="touchUpInside" id="36z-Fn-JS2"/>
-                                    <segue destination="mj2-o6-Mlk" kind="show" identifier="ToInputViewControllerSegue" id="PZa-QZ-bqb"/>
+                                    <segue destination="mj2-o6-Mlk" kind="presentation" identifier="ToInputViewControllerSegue" id="PZa-QZ-bqb"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kiT-Ir-fdV">
-                                <rect key="frame" x="102" y="474" width="171" height="64"/>
-                                <state key="normal" title="本棚"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kiT-Ir-fdV">
+                                <rect key="frame" x="155" y="369" width="64" height="30"/>
+                                <color key="backgroundColor" red="0.8671875" green="0.8671875" blue="0.8671875" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <state key="normal" title="本棚">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="BookShelfButton:" destination="sdd-TO-bsy" eventType="touchUpInside" id="AWe-P0-UtI"/>
-                                    <segue destination="ZF5-84-U9P" kind="show" identifier="ToBookShelfSegue" id="E4C-2Z-Grk"/>
+                                    <segue destination="ZF5-84-U9P" kind="show" identifier="ToBookShelfSegue" id="hz1-BX-5f5"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kiT-Ir-fdV" firstAttribute="centerY" secondItem="WK3-df-cmF" secondAttribute="centerY" constant="50" id="Ob6-lY-NTG"/>
+                            <constraint firstItem="FpH-gi-Iqa" firstAttribute="centerX" secondItem="WK3-df-cmF" secondAttribute="centerX" id="Ys9-t0-1y1"/>
+                            <constraint firstItem="FpH-gi-Iqa" firstAttribute="centerY" secondItem="WK3-df-cmF" secondAttribute="centerY" id="hbS-nT-LRV"/>
+                            <constraint firstItem="kiT-Ir-fdV" firstAttribute="centerX" secondItem="WK3-df-cmF" secondAttribute="centerX" id="w3a-Rw-4qZ"/>
+                            <constraint firstItem="FpH-gi-Iqa" firstAttribute="centerX" secondItem="WK3-df-cmF" secondAttribute="centerX" id="ylP-WU-q9g"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="gfk-QT-JQk"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cW7-T8-Liu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1476.5" y="340.5"/>
+            <point key="canvasLocation" x="1478.5" y="356.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="diary" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MemoryVC" id="BYZ-38-t0r" customClass="ViewController" customModule="diary" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -56,27 +71,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hQI-Xz-IZ5">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hQI-Xz-IZ5">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="E8y-cS-eH6"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="bHg-aF-4hb"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="hQI-Xz-IZ5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="oAU-mF-PJL"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="b1k-Jf-pzR">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="WEQ-zn-1d0">
                             <connections>
-                                <segue destination="mj2-o6-Mlk" kind="show" id="Mq5-uk-SSx"/>
+                                <segue destination="mj2-o6-Mlk" kind="show" identifier="toWriteSegue" id="Mq5-uk-SSx"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="tableView" destination="hQI-Xz-IZ5" id="H1c-4V-ZpP"/>
-                        <segue destination="mj2-o6-Mlk" kind="show" id="S17-s7-IrZ"/>
+                        <segue destination="mj2-o6-Mlk" kind="show" identifier="toDiarySegue" id="S17-s7-IrZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -86,7 +102,7 @@
         <!--Input View Controller-->
         <scene sceneID="8RQ-dt-bUi">
             <objects>
-                <viewController id="mj2-o6-Mlk" customClass="InputViewController" customModule="diary" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="InputVC" id="mj2-o6-Mlk" customClass="InputViewController" customModule="diary" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Duw-lG-LoK"/>
                         <viewControllerLayoutGuide type="bottom" id="6rt-Gq-iiJ"/>
@@ -95,20 +111,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yag-dP-Qap">
-                                <rect key="frame" x="172" y="137" width="30" height="30"/>
-                                <state key="normal" title="保存"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yag-dP-Qap">
+                                <rect key="frame" x="132" y="137" width="112" height="30"/>
+                                <color key="backgroundColor" red="0.8671875" green="0.8671875" blue="0.8671875" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <state key="normal" title="保存">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="save:" destination="mj2-o6-Mlk" eventType="touchUpInside" id="Z9H-rr-4WJ"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="タイトル" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rqb-oA-OnQ">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rqb-oA-OnQ">
                                 <rect key="frame" x="59" y="175" width="257" height="30"/>
                                 <color key="textColor" red="0.7972311943" green="0.82487445319999997" blue="0.87816999350000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="一言・メモ" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="aKE-rg-pwO">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="aKE-rg-pwO">
                                 <rect key="frame" x="59" y="250" width="257" height="211"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -118,12 +138,8 @@
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="rqb-oA-OnQ" firstAttribute="centerX" secondItem="bAF-Hw-9IV" secondAttribute="centerX" id="7HM-oG-D04"/>
-                            <constraint firstItem="Yag-dP-Qap" firstAttribute="centerX" secondItem="bAF-Hw-9IV" secondAttribute="centerX" id="J02-tk-Zob"/>
-                            <constraint firstItem="aKE-rg-pwO" firstAttribute="centerX" secondItem="bAF-Hw-9IV" secondAttribute="centerX" id="suf-BL-uqb"/>
-                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="NjN-lk-xs5"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="bodyTextView" destination="aKE-rg-pwO" id="IbX-Up-H9w"/>
@@ -137,7 +153,7 @@
         <!--Book Shelf View Controller-->
         <scene sceneID="h0D-p8-4Dx">
             <objects>
-                <viewController id="ZF5-84-U9P" customClass="BookShelfViewController" customModule="diary" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BookShelfVC" id="ZF5-84-U9P" customClass="BookShelfViewController" customModule="diary" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Hiu-Xj-7rZ"/>
                         <viewControllerLayoutGuide type="bottom" id="Iqe-Zb-ML5"/>
@@ -146,7 +162,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="MJH-km-afN">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="MJH-km-afN">
                                 <rect key="frame" x="0.0" y="63" width="375" height="604"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Pfd-NM-aOi">
                                     <size key="itemSize" width="172" height="204"/>
@@ -172,32 +188,28 @@
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="MJH-km-afN" secondAttribute="trailing" id="BMk-3c-KMo"/>
-                            <constraint firstItem="MJH-km-afN" firstAttribute="leading" secondItem="JiC-EP-69c" secondAttribute="leadingMargin" id="etj-xW-Eeb"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="jhY-tO-Ad1">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="xEk-oV-Dkq">
                             <connections>
-                                <segue destination="Qho-vz-KLE" kind="show" id="Ywf-cD-jtr"/>
+                                <segue destination="Qho-vz-KLE" kind="show" identifier="toRegistrationSegue" id="mps-Eb-wGI"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="collectionView" destination="MJH-km-afN" id="sfW-uB-3Vk"/>
-                        <segue destination="Qho-vz-KLE" kind="show" id="gEe-yw-mkD"/>
+                        <segue destination="Qho-vz-KLE" kind="presentation" identifier="BookShelfSegue" id="gEe-yw-mkD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NVQ-sS-QNZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2725.5" y="356.5"/>
+            <point key="canvasLocation" x="1761.5" y="883.5"/>
         </scene>
         <!--Registration View Controller-->
         <scene sceneID="qEQ-s7-JKh">
             <objects>
-                <viewController id="Qho-vz-KLE" customClass="RegistrationViewController" customModule="diary" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RegistrationVC" id="Qho-vz-KLE" customClass="RegistrationViewController" customModule="diary" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="4zI-hB-x0P"/>
                         <viewControllerLayoutGuide type="bottom" id="s7l-SW-zgJ"/>
@@ -206,40 +218,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="本のタイトル" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3CQ-6J-5Iv">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="本のタイトル" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3CQ-6J-5Iv">
                                 <rect key="frame" x="45" y="116" width="285" height="30"/>
                                 <color key="textColor" red="0.7972311943" green="0.82487445319999997" blue="0.87816999350000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W3z-gK-pRv">
-                                <rect key="frame" x="45" y="161" width="222" height="35"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sz8-pa-cfN">
-                                <rect key="frame" x="16" y="164" width="105" height="30"/>
+                                <rect key="frame" x="16" y="164" width="130" height="30"/>
+                                <color key="backgroundColor" red="0.8671875" green="0.8671875" blue="0.8671875" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <state key="normal" title="本の画像を取得"/>
                                 <connections>
                                     <action selector="photo:" destination="Qho-vz-KLE" eventType="touchUpInside" id="GrJ-7R-j54"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IrS-4b-GHL">
+                                <rect key="frame" x="45" y="202" width="285" height="200"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GC2-lx-RzO">
-                                <rect key="frame" x="172" y="470" width="30" height="30"/>
-                                <state key="normal" title="保存"/>
+                                <rect key="frame" x="146" y="470" width="82" height="30"/>
+                                <color key="backgroundColor" red="0.8671875" green="0.8671875" blue="0.8671875" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <state key="normal" title="保存">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="save:" destination="Qho-vz-KLE" eventType="touchUpInside" id="E6h-WA-fxK"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IrS-4b-GHL">
-                                <rect key="frame" x="45" y="202" width="285" height="200"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="3CQ-6J-5Iv" firstAttribute="centerX" secondItem="S6W-o7-cpn" secondAttribute="centerX" id="aOf-9k-qwa"/>
-                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
@@ -249,12 +258,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xau-R8-vVA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3115.5" y="356.5"/>
+            <point key="canvasLocation" x="3702.5" y="356.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="FY8-mU-xQC">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gqt-fg-O60" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="DiaryNC" automaticallyAdjustsScrollViewInsets="NO" id="gqt-fg-O60" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="gay-Wo-Nx5">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -270,27 +279,28 @@
             <point key="canvasLocation" x="315" y="1050"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="JKq-YG-EHS">
+        <scene sceneID="Kc2-oe-EFV">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5Id-mS-gEV" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="BookShelfNC" automaticallyAdjustsScrollViewInsets="NO" id="sQg-JH-7aZ" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Qa2-dr-C5L">
+                    <navigationItem key="navigationItem" id="BDg-NO-tqF"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ges-ue-Qwh">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="ZF5-84-U9P" kind="relationship" relationship="rootViewController" id="cb8-TM-JEb"/>
+                        <segue destination="ZF5-84-U9P" kind="relationship" relationship="rootViewController" id="udv-dd-Qjw"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ATr-jq-w9s" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tAf-6v-Pfp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2838" y="1036"/>
+            <point key="canvasLocation" x="3106" y="769"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="E4C-2Z-Grk"/>
-        <segue reference="PZa-QZ-bqb"/>
-        <segue reference="gEe-yw-mkD"/>
+        <segue reference="S17-s7-IrZ"/>
+        <segue reference="hz1-BX-5f5"/>
+        <segue reference="mps-Eb-wGI"/>
     </inferredMetricsTieBreakers>
 </document>
